@@ -12,7 +12,7 @@
             box-sizing: border-box;
         }
         body{
-            background-color:chartreuse;
+            background-color: rgb(219, 202, 214);
         }
         #header{
             background-color: black;
@@ -54,8 +54,13 @@
             display: flex;
             justify-content: center;
             align-items: center;
+            cursor: pointer;
 
         }
+        #icon1:active{
+        transform: scale(.95);
+    }
+
         #icon2{
             width: 4.375rem;
             height: 4.375rem;
@@ -65,13 +70,18 @@
             display: flex;
             justify-content: center;
             align-items: center;
+            cursor: pointer;
         }
+        #icon2:active{
+        transform: scale(.95);
+    }
+
         #play {
     width: 1rem;
     height: 1.25rem;
-    border-top: 0.5rem solid transparent;
+    border-top: 0.75rem solid transparent;
     border-left: 0.75rem solid whitesmoke;
-    border-bottom: 0.50rem solid transparent;
+    border-bottom: 0.75rem solid transparent;
     /* display: none; */
     
     
@@ -81,7 +91,7 @@
     height: 1.25rem;
     border-right: 0.25rem solid whitesmoke;
     border-left: 0.25rem solid whitesmoke;
-    display: none; 
+     display: none;  
 } 
 
 #stop{
@@ -93,7 +103,7 @@
 </head>
 <body>
     <h1 id="header">STOPWATCH</h1>
-    <h1 id="stopwatch">Here My Clock will come</h1>
+    <h1 id="stopwatch">00:00:00</h1>
     
     <div id="icons">
 
